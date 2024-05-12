@@ -1,0 +1,8 @@
+//To find the number on the opposite face of the given face of the dice you can use the property that the sum of opposite faces on a standard six-faced dice is always 7
+//So to find the opposite face of the given face N you can subtract N from 7
+class Solution{
+    static int oppositeFaceOfDice(int N){
+        // code here
+        return 7 - N;
+    }
+}
