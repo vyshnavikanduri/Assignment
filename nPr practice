@@ -1,0 +1,15 @@
+class Solution{
+    static long nPr(long n, long r){
+        // code here
+//we are taking n and r value from user and applied the formula in order to calculate the factorial we use fact method in recursion
+       long ans=fact(n)/fact(n-r);
+        return ans;
+    }
+    static long fact(long n)
+    {
+        if(n==1||n==0)
+            return 1;
+        else
+            return n*fact(n-1);
+    }
+}
