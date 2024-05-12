@@ -1,0 +1,28 @@
+class Solution {
+    int isDigitSumPalindrome(int n) {
+        // code here
+        int sum  = 0, res = 0;
+        while(n!=0)
+        {
+            sum += n%10;
+            n=n/10;
+        }
+        int temp = sum;
+        while(sum > 0)
+        {
+            res = res*10+sum%10;
+            sum/=10;
+        }
+        return temp==res? 1:0;
+    }
+}
+//Calculate the sum of digits:
+//Initialize sum to 0.
+//While n is not 0, add the last digit of n to sum and remove the last digit of n.
+//Reverse the sum:
+//Store the value of sum in temp.
+//Initialize res to 0.
+//While sum is not 0, add the last digit of sum to res after shifting it one position to the left, and remove the last digit of sum.
+//Check if the sum is a palindrome:
+//If temp is equal to res, return 1 (true).
+//Otherwise, return 0 (false).
