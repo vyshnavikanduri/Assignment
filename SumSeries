@@ -1,0 +1,11 @@
+class Solution {
+    public static long seriesSum(int n) {
+        // Sum to be long to hold even large integers
+        long sum = 0;
+        // n1 to hold large values since n is limited to range of int, typecast n to long and assign to n1
+        long n1 = (long) n;
+        // Calculate the sum using the formula for the series
+        sum = (n1 * (n1 + 1)) / 2;
+        return sum;
+    }
+}
