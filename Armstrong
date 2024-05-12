@@ -1,0 +1,14 @@
+class Solution {
+    static String armstrongNumber(int num){
+        // code here
+//we are getting pos1,pos2,pos3 and then finding cube for each value by using Math.pow method which yields double so we are converting it into int since num is of float type
+        int pos1=num/100;
+        int pos2=(num/10)%10;
+        int pos3=num%10;
+        int res=(int)((Math.pow(pos1,3))+(Math.pow(pos2,3))+(Math.pow(pos3,3)));
+        if(res==num)
+            return "Yes";
+        else
+           return "No";
+    }
+}
