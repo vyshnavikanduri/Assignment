@@ -1,0 +1,7 @@
+class Solution {
+    double simpleInterest(int P, int R, int T) {
+        // code here
+        //P,T,R are taken from user and we use 100.0 because result is a floating-point number instead of an integer
+        return (P*T*R)/100.0;
+    }
+}
