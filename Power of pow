@@ -1,0 +1,9 @@
+class Solution
+{
+    public long sum_of_square_evenNumbers(long n)
+    {
+        // we used the formula for this and take n value from user and then substitute in formula to get our desired output
+          return 4*((n * (n + 1) * (2 * n + 1)) / 6);
+
+    }
+}
