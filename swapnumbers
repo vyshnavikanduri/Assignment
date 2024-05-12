@@ -1,0 +1,16 @@
+class Solution{   
+    static List<Integer> get(int a,int b){
+        //complete the function here
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        return {a,b} ;
+    }
+};
+//Swap the values of a and b:
+//To swap the values of a and b without using a temporary variable, we can perform arithmetic operations.
+//a = a + b: After this operation, a contains the sum of the original values of a and b.
+//b = a - b: Now, b is assigned the value of a, which effectively swaps the original value of a to b.
+//a = a - b: Finally, a is assigned the original value of b, effectively swapping the original value of b to a.
+//Return the swapped values as a list:
+//The function returns a list containing the swapped values a and b.
