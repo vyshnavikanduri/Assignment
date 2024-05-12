@@ -1,0 +1,10 @@
+// It takes an integer N as input and returns "even" if N is even otherwise "odd"
+class Solution{
+    static String oddEven(int N){
+        // code here
+        if(N%2==0)
+            return "even";
+        else
+            return "odd";
+    }
+}
