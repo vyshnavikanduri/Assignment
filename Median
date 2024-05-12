@@ -1,0 +1,13 @@
+class Solution:
+    def find_median(self, arr):
+        arr.sort()
+        n = len(arr)
+        if n % 2 == 1:
+            return int(arr[n // 2])
+        else:
+            return int((arr[n // 2 - 1] + arr[n // 2]) / 2)
+//The find_median function sorts the input array arr
+//It then calculates the length of the array n
+//If the length is odd, it returns the middle element directly
+//If the length is even, it calculates the average of the two middle elements
+//Using int() ensures that the returned value is an integer
