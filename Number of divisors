@@ -1,0 +1,23 @@
+class Solution {
+    int count_divisors(int N) {
+        int count = 0;
+        for (int i = 1; i <= Math.sqrt(N); i++) {
+            if (N % i == 0) {
+                if (i % 3 == 0) count++;
+                if (N / i != i && (N / i) % 3 == 0) count++;
+            }
+        }
+        return count;
+    }
+}
+//Initialization:
+//Initialize count to 0 to count the number of divisors that are divisible by 3.
+//Iteration:
+//Iterate from 1 to the square root of N to find divisors of N.
+//Divisor Check:
+//For each value of i, check if it is a divisor of N.
+//Counting:
+//If i is divisible by 3, increment count.
+//If N/i is not equal to i (i.e., i is not a perfect square divisor) and N/i is divisible by 3, increment count.
+//Return:
+//Finally, return the count of divisors that are divisible by 3.
