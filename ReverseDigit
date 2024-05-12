@@ -1,0 +1,17 @@
+//This function takes a long integer num as input and returns the reversed number
+//It iteratively extracts digits from the input number and constructs the reversed number by multiplying the current reversed number by 10 and adding the extracted digit
+//Finally it returns the reversed number
+class Solution
+{
+    public long reverse_digit(long num)
+    {
+        long rev=0;
+        while(num>0)
+        {
+            long rem=num%10;
+            rev=(rev*10)+rem;
+            num=num/10;
+        }
+        return rev;
+    }
+}
